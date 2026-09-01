@@ -25,7 +25,7 @@ def display_report(data: dict):
 
     panel = Panel(
         Group(table, summary), 
-        title="[bold blue]🛡️ OSINT Threat Intelligence Report[/bold blue]", 
+        title="[bold blue]OSINT Threat Intelligence Report[/bold blue]", 
         border_style="blue", 
         expand=False
     )

